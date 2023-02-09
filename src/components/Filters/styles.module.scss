@@ -1,0 +1,15 @@
+.filters {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .statusSelect {
+    min-width: 300px;
+  }
+
+  .dateSelect {
+    display: flex;
+    gap: 2rem;
+  }
+}

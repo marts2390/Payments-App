@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+.card {
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .status {
+    margin-bottom: 0.5rem;
+
+    // Success
+    &.settled,
+    &.completed {
+      color: $green;
+    }
+
+    // Pending
+    &.created,
+    &.captured {
+      color: $orange;
+    }
+
+    // Error
+    &.failed {
+      color: $red;
+    }
+  }
+
+  .amount {
+    font-weight: $font-medium;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    margin-bottom: 0.5rem;
+  }
+}
